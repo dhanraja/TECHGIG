@@ -23,7 +23,7 @@ public class CandidateCode {
        
     else if(scanner.hasNextLine())
        {
-          System.out.println(preText + "String."); 
+          System.out.println(preText + "string."); 
        }
      else
      {
