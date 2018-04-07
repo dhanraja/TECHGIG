@@ -1,0 +1,42 @@
+/* 
+ * Enter your code here. Read input from STDIN. Print your output to STDOUT. 
+ * Your class should be named CandidateCode.
+*/
+
+import java.io.*;
+import java.util.*;
+public class CandidateCode {
+    public static void main(String args[] ) throws Exception {
+    
+    
+    Scanner scanner = new Scanner(System.in);
+    int low = scanner.nextInt();
+    int high = scanner.nextInt();
+    
+    int counter=0;
+    for(int i=low;i<=high;i++)
+    {
+        if(isPrime(i))
+        {
+          counter++;
+        }
+    }
+    System.out.println(counter);
+  }
+
+  static boolean isPrime(int num)
+     {
+           if(num==1)
+              return false;
+              
+           for(int j=2;j<=Math.sqrt(num);j++)
+             {
+                if(num%j==0)
+                 {
+                   return false;
+                 }       
+             }
+            return true; 
+
+     }
+}     
