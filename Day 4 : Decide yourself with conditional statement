@@ -1,0 +1,28 @@
+/* 
+ * Enter your code here. Read input from STDIN. Print your output to STDOUT. 
+ * Your class should be named CandidateCode.
+*/
+
+import java.io.*;
+import java.util.*;
+public class CandidateCode {
+    public static void main(String args[] ) throws Exception {
+
+    Scanner scanner = new Scanner(System.in);
+    int age = scanner.nextInt();
+    
+    if(age < 10)
+       {
+           System.out.println("I am happy as having no responsibilities.");
+       }
+     else if(age >= 18)
+      {
+          System.out.println("I am very much happy as i handled the pressure very well.");
+      }
+      else
+      {
+          System.out.println("I am still happy but starts feeling pressure of life.");
+      }
+
+   }
+}
