@@ -1,0 +1,18 @@
+/* 
+ * Enter your code here. Read input from STDIN. Print your output to STDOUT. 
+ * Your class should be named CandidateCode.
+*/
+
+import java.io.*;
+import java.util.*;
+public class CandidateCode {
+    public static void main(String args[] ) throws Exception {
+
+      Scanner scanner = new Scanner(System.in);
+      double principal = scanner.nextDouble();
+      int interest = scanner.nextInt();
+      int year = scanner.nextInt();
+  
+      System.out.println((int)(principal * interest * year) / 100);
+   }
+}
