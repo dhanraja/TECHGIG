@@ -1,0 +1,41 @@
+/* 
+ * Enter your code here. Read input from STDIN. Print your output to STDOUT. 
+ * Your class should be named CandidateCode.
+*/
+
+import java.io.*;
+import java.util.*;
+public class CandidateCode {
+    public static void main(String args[] ) throws Exception {
+
+     Scanner scanner = new Scanner(System.in);
+     
+
+     
+     int n = scanner.nextInt();
+     
+     int temp=0;
+     int arr[]=new int[n];
+     
+     for(int i=0;i<n;i++)
+     {
+        arr[i] = scanner.nextInt();
+     }
+     
+     int f_largest=arr[0],s_largest=0;
+     for(int i=0;i<n;i++)
+     {
+        if(arr[i]>f_largest)
+          {
+              s_largest=f_largest;
+              f_largest=arr[i];
+          }
+         else if(arr[i]>s_largest && arr[i]<f_largest)
+          {
+              s_largest=arr[i];
+           }
+          
+     }
+     System.out.println(s_largest);
+   }
+}
