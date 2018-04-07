@@ -1,0 +1,34 @@
+/* 
+ * Enter your code here. Read input from STDIN. Print your output to STDOUT. 
+ * Your class should be named CandidateCode.
+*/
+
+import java.io.*;
+import java.util.*;
+public class CandidateCode {
+    public static void main(String args[] ) throws Exception {
+
+    Scanner scanner = new Scanner(System.in);
+    String preText="This input is of type ";
+    
+    if(scanner.hasNextInt())
+       {
+          System.out.println(preText + "Integer."); 
+       }
+    
+    else if(scanner.hasNextFloat())
+       {
+          System.out.println(preText + "Float."); 
+       }
+       
+    else if(scanner.hasNextLine())
+       {
+          System.out.println(preText + "String."); 
+       }
+     else
+     {
+          System.out.println("This is something else."); 
+     }
+
+   }
+}
