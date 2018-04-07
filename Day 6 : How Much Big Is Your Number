@@ -1,0 +1,24 @@
+/* 
+ * Enter your code here. Read input from STDIN. Print your output to STDOUT. 
+ * Your class should be named CandidateCode.
+*/
+
+import java.io.*;
+import java.util.*;
+public class CandidateCode {
+    public static void main(String args[] ) throws Exception {
+
+    Scanner scanner = new Scanner(System.in);
+    int number = scanner.nextInt();
+    int counter=1;
+    
+    while(number/10!=0)
+    {
+        number = number / 10;
+        counter++;
+    }
+    
+    System.out.println(counter);
+
+   }
+}
